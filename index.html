@@ -1,254 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <title>Anu Sinha | AI & Economics Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    :root {
-      --bg: #f5f7fb;
-      --card-bg: #ffffff;
-      --border: #e1e4ea;
-      --accent: #1f3f78;
-      --accent-soft: #eef2fb;
-      --text-main: #111827;
-      --text-muted: #6b7280;
-      --radius-card: 14px;
-      --radius-pill: 999px;
-      --shadow-soft: 0 12px 25px rgba(15, 23, 42, 0.08);
-    }
+    <meta charset="UTF-8" />
+    <title>Your Name | AI & Economics Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        :root {
+            --bg: #f5f7fb;
+            --card-bg: #ffffff;
+            --border: #e1e4ea;
+            --accent: #1f3f78;
+            --accent-soft: #eef2fb;
+            --text-main: #111827;
+            --text-muted: #6b7280;
+            --radius-card: 14px;
+            --radius-pill: 999px;
+            --shadow-soft: 0 12px 25px rgba(15, 23, 42, 0.08);
+        }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        sans-serif;
-      background: var(--bg);
-      color: var(--text-main);
-      padding: 24px;
-      display: flex;
-      justify-content: center;
-    }
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                sans-serif;
+            background: var(--bg);
+            color: var(--text-main);
+            padding: 24px;
+            display: flex;
+            justify-content: center;
+        }
 
-    .container {
-      width: 100%;
-      max-width: 960px;
-    }
+        .container {
+            width: 100%;
+            max-width: 960px;
+        }
 
-    header {
-      margin-bottom: 24px;
-    }
+        header {
+            margin-bottom: 24px;
+        }
 
-    header h1 {
-      font-size: 2.4rem;
-      font-weight: 700;
-      color: var(--accent);
-      margin-bottom: 4px;
-    }
+        header h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 4px;
+        }
 
-    header p {
-      font-size: 0.98rem;
-      color: var(--text-muted);
-    }
+        header p {
+            font-size: 0.98rem;
+            color: var(--text-muted);
+        }
 
-    .about-card {
-      background: var(--card-bg);
-      border-radius: var(--radius-card);
-      border: 1px solid var(--border);
-      padding: 20px;
-      margin-top: 20px;
-      box-shadow: var(--shadow-soft);
-      display: grid;
-      grid-template-columns: 160px 1fr;
-      gap: 18px;
-      align-items: center;
-    }
+        .about-card {
+            background: var(--card-bg);
+            border-radius: var(--radius-card);
+            border: 1px solid var(--border);
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: var(--shadow-soft);
+            display: grid;
+            grid-template-columns: 160px 1fr;
+            gap: 18px;
+            align-items: center;
+        }
 
-    @media (max-width: 700px) {
-      .about-card {
-        grid-template-columns: 1fr;
-      }
-    }
+        @media (max-width: 700px) {
+            .about-card {
+                grid-template-columns: 1fr;
+            }
+        }
 
-    .profile-photo {
-      width: 160px;
-      height: 160px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, #cbd5f5, #e0f2fe);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--accent);
-      font-weight: 600;
-      font-size: 1.1rem;
-    }
+        .profile-photo {
+            width: 160px;
+            height: 160px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #cbd5f5, #e0f2fe);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
 
-    .profile-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 12px;
-      display: block;
-    }
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+            display: block;
+        }
 
-    .about-text h2 {
-      font-size: 1.15rem;
-      margin-bottom: 8px;
-    }
+        .about-text h2 {
+            font-size: 1.15rem;
+            margin-bottom: 8px;
+        }
 
-    .about-text p {
-      font-size: 0.94rem;
-      line-height: 1.6;
-      color: var(--text-muted);
-      margin-bottom: 6px;
-    }
+        .about-text p {
+            font-size: 0.94rem;
+            line-height: 1.6;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+        }
 
-    .cards-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-      margin-top: 28px;
-    }
+        .cards-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+            margin-top: 28px;
+        }
 
-    @media (max-width: 700px) {
-      .cards-row {
-        grid-template-columns: 1fr;
-      }
-    }
+        @media (max-width: 700px) {
+            .cards-row {
+                grid-template-columns: 1fr;
+            }
+        }
 
-    .card {
-      background: var(--card-bg);
-      border-radius: var(--radius-card);
-      border: 1px solid var(--border);
-      padding: 20px;
-      box-shadow: var(--shadow-soft);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      min-height: 170px;
-    }
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--radius-card);
+            border: 1px solid var(--border);
+            padding: 20px;
+            box-shadow: var(--shadow-soft);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 170px;
+        }
 
-    .card-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: var(--accent-soft);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 12px;
-      font-size: 1.2rem;
-      color: var(--accent);
-    }
+        .card-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--accent-soft);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+            color: var(--accent);
+        }
 
-    .card h3 {
-      font-size: 1.05rem;
-      margin-bottom: 4px;
-    }
+        .card h3 {
+            font-size: 1.05rem;
+            margin-bottom: 4px;
+        }
 
-    .card p {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      margin-bottom: 10px;
-    }
+        .card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
 
-    .card button,
-    .card a.button-link {
-      margin-top: auto;
-      align-self: flex-start;
-      padding: 9px 18px;
-      border-radius: var(--radius-pill);
-      border: none;
-      background: #1f4fd6;
-      color: #ffffff;
-      font-size: 0.9rem;
-      font-weight: 500;
-      cursor: pointer;
-      text-decoration: none;
-      box-shadow: 0 10px 22px rgba(31, 79, 214, 0.25);
-      transition: background 0.15s ease, transform 0.12s ease,
-        box-shadow 0.12s ease;
-    }
+        .card button,
+        .card a.button-link {
+            margin-top: auto;
+            align-self: flex-start;
+            padding: 9px 18px;
+            border-radius: var(--radius-pill);
+            border: none;
+            background: #1f4fd6;
+            color: #ffffff;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 10px 22px rgba(31, 79, 214, 0.25);
+            transition: background 0.15s ease, transform 0.12s ease,
+                box-shadow 0.12s ease;
+        }
 
-    .card a.button-link:hover {
-      background: #173faa;
-      transform: translateY(-1px);
-      box-shadow: 0 14px 28px rgba(15, 46, 120, 0.35);
-    }
-  </style>
+        .card a.button-link:hover {
+            background: #173faa;
+            transform: translateY(-1px);
+            box-shadow: 0 14px 28px rgba(15, 46, 120, 0.35);
+        }
+    </style>
 </head>
+
 <body>
-  <div class="container">
-    <header>
-      <!-- TODO: change this to your real name -->
-      <h1>Your Name</h1>
-      <!-- TODO: update this line with your info -->
-      <p>
-        Undergraduate Student, Managerial Economics | University of Massachusetts
-        Amherst
-      </p>
-    </header>
+    <div class="container">
+        <header>
+            <!-- TODO: change this to your real name -->
+            <h1>Anu Sinha
+                <!-- TODO: update this line with your info -->
+                <p>
+                    Managerial Economics | Data analytics & AI | Senior @ UMass Amherst
+                </p>
+        </header>
 
-    <section class="about-card">
-      <!-- OPTIONAL: Replace this placeholder with a real image -->
-      <!-- Example: <div class="profile-photo"><img src="images/profile.jpg" alt="Photo of Your Name"></div> -->
-      <div class="profile-photo">
-        <!-- If no real photo yet, leave this text -->
-        Profile Photo
-      </div>
+        <section class="about-card">
+            <!-- OPTIONAL: Replace this placeholder with a real image -->
+            <!-- Example: <div class="profile-photo"><img src="images/profile.jpg" alt="Photo of Your Name"></div> -->
+            <div class="profile-photo">
+                <img src="profile.jpg" alt="Photo of Anu Sinha" />
+            </div>
 
-      <div class="about-text">
-        <h2>About Me</h2>
-        <!-- TODO: edit this text to be your own short intro -->
-        <p>
-          Welcome! I'm a Managerial Economics student at UMass Amherst with a
-          strong interest in artificial intelligence, data analysis, and their
-          applications in business and economics.
-        </p>
-        <p>
-          This portfolio highlights my coursework and projects from the AI in
-          Economics class, including my final project on AI in business decision-making.
-        </p>
-      </div>
-    </section>
 
-    <section class="cards-row">
-      <!-- Resume card -->
-      <div class="card">
-        <div>
-          <div class="card-icon">📄</div>
-          <h3>Resume</h3>
-          <p>
-            View my professional background, education, and experience related to
-            AI, economics, and data.
-          </p>
-        </div>
-        <!-- IMPORTANT: resume.pdf must be in the same folder as this file -->
-        <a href="resume.pdf" class="button-link" target="_blank" rel="noopener">
-          View Resume
-        </a>
-      </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <!-- TODO: edit this text to be your own short intro -->
+                <p>
+                    Hi! I'm Anu Sinha, a Managerial Economics student at UMass Amherst with a strong
+                    interest in artificial intelligence, data analytics, and business decision-making.
+                    I enjoy using data to understand real-world problems and create meaningful insights.
+                </p>
 
-      <!-- Projects card -->
-      <div class="card">
-        <div>
-          <div class="card-icon">📁</div>
-          <h3>Projects</h3>
-          <p>
-            Explore my AI class project and related academic work from RESECON
-            490AI.
-          </p>
-        </div>
-        <!-- IMPORTANT: project.html must exist in the same folder -->
-        <a href="project.html" class="button-link">
-          View Projects
-        </a>
-      </div>
-    </section>
-  </div>
+                <p>
+                    This website showcases my work from the AI in Economics course, including my final
+                    project on how artificial intelligence is transforming the consumer lending industry.
+                    You’ll also find my resume and other academic projects.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="cards-row">
+            <!-- Resume card -->
+            <div class="card">
+                <div>
+                    <div class="card-icon">📄</div>
+                    <h3>Resume</h3>
+                    <p>
+                        View my professional background, education, and experience related to
+                        AI, economics, and data.
+                    </p>
+                </div>
+                <!-- IMPORTANT: resume.pdf must be in the same folder as this file -->
+                <a href="resume.pdf" class="button-link" target="_blank" rel="noopener">
+                    View Resume
+                </a>
+            </div>
+
+            <!-- Projects card -->
+            <div class="card">
+                <div>
+                    <div class="card-icon">📁</div>
+                    <h3>Projects</h3>
+                    <p>
+                        Explore my AI class project and related academic work from RESECON
+                        490AI.
+                    </p>
+                </div>
+                <!-- IMPORTANT: project.html must exist in the same folder -->
+                <a href="project.html" class="button-link">
+                    View Projects
+                </a>
+            </div>
+        </section>
+    </div>
 </body>
+
 </html>
